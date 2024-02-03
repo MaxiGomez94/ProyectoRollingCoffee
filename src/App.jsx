@@ -1,13 +1,17 @@
 
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.css';
+import Menu from './components/common/Menu'
+import Inicio from './components/pages/Inicio'
+import Footer from './components/common/Footer'
 const App=()=> {
 
 
   return (
     <>
-    <h1 className='text-center'>hola</h1>
-
+    <Menu></Menu>
+    <Inicio></Inicio>
+    <Footer></Footer>
     </>
   )
 }
