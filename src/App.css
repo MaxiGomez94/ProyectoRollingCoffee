@@ -25,11 +25,11 @@ main {
   text-align: center; 
 }
 .bg-footer{
-  background-color: green;
+z-index: 1;
+background: #627F3B;
+background: linear-gradient(225deg, #627F3B, #01D060);
 }
 
-
-.navbar-nav .nav-link.active,
 .navbar-nav .nav-link:hover {
   color: blue; /* Color de texto blanco para el enlace activo y en hover */
 }
