@@ -10,6 +10,8 @@ import Administrador from "./components/pages/Administrador";
 import Registro from "./components/pages/Registro";
 import Login from "./components/pages/Login";
 import FormularioProducto from "./components/pages/producto/FormularioProducto";
+import DetalleProducto from "./components/pages/DetalleProducto";
+import CardProducto from "./components/pages/producto/CardProducto";
 const App = () => {
   return (
     <BrowserRouter>
@@ -17,6 +19,8 @@ const App = () => {
     <Routes>
       <Route exact path='/' element={<Inicio></Inicio>}></Route>
       <Route  path="/admin/" element={<Administrador></Administrador>}></Route>
+      <Route  path="/detalle/" element={<DetalleProducto></DetalleProducto>}></Route>
+      <Route  path="/admin/crear" element={<FormularioProducto></FormularioProducto>}></Route>
       <Route path="/registro" element={<Registro></Registro>} ></Route>
       <Route path="/Login" element={<Login></Login>}></Route>
       <Route path="*" element={<Error404></Error404>}></Route>
